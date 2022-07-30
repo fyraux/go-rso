@@ -256,7 +256,7 @@ func clientVersion() (string, error) {
 		return "", err
 	}
 
-	return body.Data.Version, nil
+	return body.Data.RiotClientVersion, nil
 }
 
 // handshake with Riot Games.
