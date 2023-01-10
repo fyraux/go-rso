@@ -399,7 +399,7 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 	}
 
 	authHeaders.Set("X-Riot-Entitlements-JWT", token)
-	authHeaders.Set("X-Riot-Client-Version", version)
+	authHeaders.Set("X-Riot-ClientVersion", version)
 
 	subject, err := parseSubject(token)
 	if err != nil {
